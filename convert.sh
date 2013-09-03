@@ -83,6 +83,10 @@
 		registration/activation_email.txt
 		cd ..
 		cd ..
+		reg_path=/usr/local/lib/python2.7/dist-packages/\
+		registration/backends/default/urls.py
+		sed -i "s/$string1/$string2/g" $reg_path
+		sed -i "s/$string3/$string4/g" $reg_path
 		cd Downloads
 		rm -R django
 		rm -R Django-1.5.2
